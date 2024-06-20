@@ -17,13 +17,9 @@
 	],
 	"scripts": {
 		"build": "tsc && tsc-alias",
+		"biome": "@biomejs/biome format --write ./lib" ,
 		"coverage": "vitest run --coverage --passWithNoTests",
-		"eslint": "eslint -f visualstudio --cache --ext .ts,.js  --ignore-path .gitignore  .",
-		"eslint:fix": "eslint -f visualstudio --cache --ext .ts,.js  --ignore-path .gitignore  --fix --fix-type directive,problem,suggestion,layout  .",
-		"format": "npm run prettier; npm run eslint:fix",
-		"lint": "npm run eslint",
-		"prepublishOnly": "npm run format && npm run lint && npm run build && publint",
-		"prettier": "prettier --config .prettierrc --cache --cache-location=.prettiercache --ignore-path .gitignore --write  .  ",
+		"prepublishOnly": "npm run biome && npm run build && publint",
 		"test": "vitest --passWithNoTests run"
 	},
 	"author": "Willem Vanhulle <willemvanhulle@gmail.com>",
@@ -41,12 +37,10 @@
 		"typescript": "5.5.2"
 	},
 	"devDependencies": {
+		"@biomejs/biome": "1.8.2",
 		"@types/lodash-es": "4.17.12",
 		"@types/node": "^20.14.6",
-		"@wvhulle/eslint-config-typescript": "0.0.3",
-		"@wvhulle/prettier-config-node": "0.0.1",
 		"@wvhulle/tsconfig": "0.0.1",
-		"eslint": "9.5.0",
 		"fast-check": "3.19.0",
 		"publint": "0.2.8",
 		"vitest": "1.6.0"

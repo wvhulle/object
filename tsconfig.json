@@ -4,7 +4,7 @@
 	"compilerOptions": {
 		"outDir": "dist",
 		"baseUrl": ".",
-		"paths": { "$lib": ["./lib"], "$lib/*": ["./lib/*"] },
+		"paths": { "$lib": ["./lib"], "$lib/*": ["./lib/*"] }
 	},
 	"include": ["./lib/**/*.ts", "./lib/**/*.spec.ts"]
 }
