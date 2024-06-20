@@ -3,7 +3,6 @@ export * from "./date.js";
 export * from "./records.js";
 export * from "./replace.js";
 export * from "./traversal.js";
-export * from "./decimal.js";
 
 export type Nullable<T, K> = undefined extends T ? K : never;
 
