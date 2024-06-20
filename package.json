@@ -17,7 +17,7 @@
 	],
 	"scripts": {
 		"build": "tsc && tsc-alias",
-		"biome": "@biomejs/biome format --write ./lib" ,
+		"biome": "biome format --write ./lib" ,
 		"coverage": "vitest run --coverage --passWithNoTests",
 		"prepublishOnly": "npm run biome && npm run build && publint",
 		"test": "vitest --passWithNoTests run"
