@@ -1,6 +1,6 @@
 {
 	"name": "@wvhulle/object",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"main": "dist/index.js",
 	"module": "dist/index.js",
 	"exports": {
@@ -11,9 +11,12 @@
 	},
 	"repository": "https://github.com/wvhulle/object",
 	"keywords": [
-		"Node",
+		"NodeJS",
 		"library",
-		"TypeScript"
+		"TypeScript",
+		"Object",
+		"recursion",
+		"structural-typing"
 	],
 	"scripts": {
 		"build": "tsc && tsc-alias",
